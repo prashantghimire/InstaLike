@@ -133,6 +133,51 @@
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vmp-bE-R6T">
+            <objects>
+                <navigationController id="Bsv-vb-fDA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PBS-Of-8Mj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Fjm-ll-Ar5" kind="relationship" relationship="rootViewController" id="8bx-YN-53p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMs-V0-Z6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="35"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jjF-vL-XbK">
+            <objects>
+                <viewController id="Fjm-ll-Ar5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lwt-3E-fer"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZeG-CU-rhV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8e2-Ge-ZkY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUi-3U-ReJ">
+                                <rect key="frame" x="147" y="92" width="80" height="30"/>
+                                <state key="normal" title="Hello there!"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UUi-3U-ReJ" firstAttribute="top" secondItem="lwt-3E-fer" secondAttribute="bottom" constant="28" id="5wY-vp-NJ5"/>
+                            <constraint firstItem="UUi-3U-ReJ" firstAttribute="centerX" secondItem="8e2-Ge-ZkY" secondAttribute="centerX" id="9pt-Ba-6ZV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CQg-qB-Cnu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYV-ZK-dBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="35"/>
+        </scene>
         <!--Register-->
         <scene sceneID="nnN-F3-BOh">
             <objects>
