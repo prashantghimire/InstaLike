@@ -23,6 +23,36 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeN-VG-5MP">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InstaLike" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qly-z0-Wfj">
+                                        <rect key="frame" x="50" y="50" width="275" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="M1C-py-9PP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="1" green="0.42241980769999998" blue="0.42026214099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsH-Ap-aUU">
+                                        <rect key="frame" x="137.5" y="597" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="lXN-LA-iXg"/>
+                                            <constraint firstAttribute="height" constant="40" id="wuQ-Sp-SZF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.31642793860000001" green="0.59480024409999999" blue="0.90351364209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qly-z0-Wfj" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="BHA-cN-xpF"/>
+                                    <constraint firstItem="wsH-Ap-aUU" firstAttribute="top" secondItem="qly-z0-Wfj" secondAttribute="bottom" constant="507" id="MWa-Pj-faK"/>
+                                    <constraint firstItem="wsH-Ap-aUU" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="Ros-Ab-qED"/>
+                                    <constraint firstAttribute="bottom" secondItem="wsH-Ap-aUU" secondAttribute="bottom" constant="30" id="Va1-cS-HC5"/>
+                                    <constraint firstItem="qly-z0-Wfj" firstAttribute="leading" secondItem="IeN-VG-5MP" secondAttribute="leading" constant="50" id="pbY-OQ-HfA"/>
+                                    <constraint firstItem="qly-z0-Wfj" firstAttribute="top" secondItem="IeN-VG-5MP" secondAttribute="top" constant="50" id="sAp-UI-ldP"/>
+                                    <constraint firstAttribute="trailing" secondItem="qly-z0-Wfj" secondAttribute="trailing" constant="50" id="uXJ-Vc-CfR"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
