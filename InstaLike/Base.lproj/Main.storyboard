@@ -50,9 +50,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M92-O7-ffx">
-                                        <rect key="frame" x="87.5" y="110" width="200" height="40"/>
+                                        <rect key="frame" x="50" y="110" width="275" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="aru-P0-6Po"/>
                                             <constraint firstAttribute="height" constant="40" id="nef-0T-v0k"/>
                                         </constraints>
                                         <nil key="textColor"/>
@@ -60,9 +59,8 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FJT-8S-DG0">
-                                        <rect key="frame" x="87.5" y="200" width="200" height="40"/>
+                                        <rect key="frame" x="50" y="200" width="275" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="Gad-HE-6aM"/>
                                             <constraint firstAttribute="height" constant="40" id="Szz-zq-a8T"/>
                                         </constraints>
                                         <nil key="textColor"/>
@@ -100,18 +98,23 @@
                                 <constraints>
                                     <constraint firstItem="EOc-jh-t1w" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="16c-sJ-Qp0"/>
                                     <constraint firstAttribute="bottom" secondItem="GE0-LC-IU9" secondAttribute="bottom" constant="30" id="4r2-d2-QuN"/>
+                                    <constraint firstItem="M92-O7-ffx" firstAttribute="leading" secondItem="IeN-VG-5MP" secondAttribute="leading" constant="50" id="6ml-1K-fnl"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="BHA-cN-xpF"/>
                                     <constraint firstItem="GE0-LC-IU9" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="FSY-1G-cgl"/>
+                                    <constraint firstItem="FJT-8S-DG0" firstAttribute="width" secondItem="M92-O7-ffx" secondAttribute="width" id="IMo-Bi-ME4"/>
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="width" secondItem="M92-O7-ffx" secondAttribute="width" id="IrC-eN-ebk"/>
                                     <constraint firstItem="EOc-jh-t1w" firstAttribute="top" secondItem="FJT-8S-DG0" secondAttribute="bottom" constant="30" id="L9E-eZ-6Id"/>
                                     <constraint firstItem="M92-O7-ffx" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="QL8-8I-fE6"/>
                                     <constraint firstItem="M92-O7-ffx" firstAttribute="top" secondItem="qly-z0-Wfj" secondAttribute="bottom" constant="50" id="RCB-k9-jOB"/>
+                                    <constraint firstAttribute="trailing" secondItem="M92-O7-ffx" secondAttribute="trailing" constant="50" id="SjJ-7k-yMv"/>
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="brW-St-FYB"/>
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="top" secondItem="M92-O7-ffx" secondAttribute="bottom" constant="50" id="gne-Yh-vaw"/>
                                     <constraint firstItem="GE0-LC-IU9" firstAttribute="top" secondItem="EOc-jh-t1w" secondAttribute="bottom" constant="30" id="iE3-pJ-Bau"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="leading" secondItem="IeN-VG-5MP" secondAttribute="leading" constant="50" id="pbY-OQ-HfA"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="top" secondItem="IeN-VG-5MP" secondAttribute="top" constant="20" id="sAp-UI-ldP"/>
+                                    <constraint firstItem="FJT-8S-DG0" firstAttribute="leading" secondItem="IeN-VG-5MP" secondAttribute="leading" constant="50" id="uC9-oN-9v6"/>
                                     <constraint firstAttribute="trailing" secondItem="qly-z0-Wfj" secondAttribute="trailing" constant="50" id="uXJ-Vc-CfR"/>
+                                    <constraint firstAttribute="trailing" secondItem="FJT-8S-DG0" secondAttribute="trailing" constant="50" id="vYY-ov-tEB"/>
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="height" secondItem="M92-O7-ffx" secondAttribute="height" id="wqi-ID-7eg"/>
                                 </constraints>
                             </scrollView>
