@@ -43,15 +43,59 @@
                                         <color key="textColor" red="0.31642793860000001" green="0.59480024409999999" blue="0.90351364209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M92-O7-ffx">
+                                        <rect key="frame" x="87.5" y="190" width="200" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="aru-P0-6Po"/>
+                                            <constraint firstAttribute="height" constant="40" id="nef-0T-v0k"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FJT-8S-DG0">
+                                        <rect key="frame" x="87.5" y="280" width="200" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Gad-HE-6aM"/>
+                                            <constraint firstAttribute="height" constant="40" id="Szz-zq-a8T"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOc-jh-t1w">
+                                        <rect key="frame" x="137" y="350" width="100" height="40"/>
+                                        <color key="backgroundColor" red="0.93732154190000005" green="0.46792182049999997" blue="0.33497531330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Jw8-0t-p1r"/>
+                                            <constraint firstAttribute="height" constant="40" id="eeW-FU-FfC"/>
+                                        </constraints>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="EOc-jh-t1w" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="16c-sJ-Qp0"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="BHA-cN-xpF"/>
+                                    <constraint firstItem="FJT-8S-DG0" firstAttribute="width" secondItem="M92-O7-ffx" secondAttribute="width" id="IrC-eN-ebk"/>
+                                    <constraint firstItem="EOc-jh-t1w" firstAttribute="top" secondItem="FJT-8S-DG0" secondAttribute="bottom" constant="30" id="L9E-eZ-6Id"/>
                                     <constraint firstItem="wsH-Ap-aUU" firstAttribute="top" secondItem="qly-z0-Wfj" secondAttribute="bottom" constant="507" id="MWa-Pj-faK"/>
+                                    <constraint firstItem="M92-O7-ffx" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="QL8-8I-fE6"/>
+                                    <constraint firstItem="M92-O7-ffx" firstAttribute="top" secondItem="qly-z0-Wfj" secondAttribute="bottom" constant="100" id="RCB-k9-jOB"/>
                                     <constraint firstItem="wsH-Ap-aUU" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="Ros-Ab-qED"/>
                                     <constraint firstAttribute="bottom" secondItem="wsH-Ap-aUU" secondAttribute="bottom" constant="30" id="Va1-cS-HC5"/>
+                                    <constraint firstItem="FJT-8S-DG0" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="brW-St-FYB"/>
+                                    <constraint firstItem="FJT-8S-DG0" firstAttribute="top" secondItem="M92-O7-ffx" secondAttribute="bottom" constant="50" id="gne-Yh-vaw"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="leading" secondItem="IeN-VG-5MP" secondAttribute="leading" constant="50" id="pbY-OQ-HfA"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="top" secondItem="IeN-VG-5MP" secondAttribute="top" constant="50" id="sAp-UI-ldP"/>
                                     <constraint firstAttribute="trailing" secondItem="qly-z0-Wfj" secondAttribute="trailing" constant="50" id="uXJ-Vc-CfR"/>
+                                    <constraint firstItem="FJT-8S-DG0" firstAttribute="height" secondItem="M92-O7-ffx" secondAttribute="height" id="wqi-ID-7eg"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
