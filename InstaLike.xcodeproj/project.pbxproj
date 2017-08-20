@@ -13,9 +13,7 @@
 		EC436FCD1F491A6500DB74B2 /* InstaLike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC436FCB1F491A6500DB74B2 /* InstaLike.xcdatamodeld */; };
 		EC436FCF1F491A6500DB74B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC436FCE1F491A6500DB74B2 /* Assets.xcassets */; };
 		EC436FD21F491A6500DB74B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC436FD01F491A6500DB74B2 /* LaunchScreen.storyboard */; };
-		EC436FDA1F4922D100DB74B2 /* Services in Resources */ = {isa = PBXBuildFile; fileRef = EC436FD91F4922D100DB74B2 /* Services */; };
-		EC436FDC1F4922DD00DB74B2 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = EC436FDB1F4922DD00DB74B2 /* Models */; };
-		EC436FDE1F4922E500DB74B2 /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = EC436FDD1F4922E500DB74B2 /* Controllers */; };
+		EC436FE71F4939E200DB74B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC436FE61F4939E200DB74B2 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +26,7 @@
 		EC436FCE1F491A6500DB74B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC436FD11F491A6500DB74B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC436FD31F491A6500DB74B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC436FD91F4922D100DB74B2 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
-		EC436FDB1F4922DD00DB74B2 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
-		EC436FDD1F4922E500DB74B2 /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
+		EC436FE61F4939E200DB74B2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED1B56A10F82B0F1BBF423EC /* Pods_InstaLike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaLike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,9 +80,10 @@
 		EC436FC31F491A6500DB74B2 /* InstaLike */ = {
 			isa = PBXGroup;
 			children = (
-				EC436FDD1F4922E500DB74B2 /* Controllers */,
-				EC436FDB1F4922DD00DB74B2 /* Models */,
-				EC436FD91F4922D100DB74B2 /* Services */,
+				EC436FE21F4939C600DB74B2 /* Components */,
+				EC436FE31F4939C600DB74B2 /* Controllers */,
+				EC436FE41F4939C600DB74B2 /* Models */,
+				EC436FE51F4939C600DB74B2 /* Services */,
 				EC436FC41F491A6500DB74B2 /* AppDelegate.swift */,
 				EC436FC81F491A6500DB74B2 /* Main.storyboard */,
 				EC436FCE1F491A6500DB74B2 /* Assets.xcassets */,
@@ -95,6 +92,35 @@
 				EC436FCB1F491A6500DB74B2 /* InstaLike.xcdatamodeld */,
 			);
 			path = InstaLike;
+			sourceTree = "<group>";
+		};
+		EC436FE21F4939C600DB74B2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EC436FE31F4939C600DB74B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC436FE61F4939E200DB74B2 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC436FE41F4939C600DB74B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC436FE51F4939C600DB74B2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +186,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC436FDC1F4922DD00DB74B2 /* Models in Resources */,
-				EC436FDA1F4922D100DB74B2 /* Services in Resources */,
-				EC436FDE1F4922E500DB74B2 /* Controllers in Resources */,
 				EC436FD21F491A6500DB74B2 /* LaunchScreen.storyboard in Resources */,
 				EC436FCF1F491A6500DB74B2 /* Assets.xcassets in Resources */,
 				EC436FCA1F491A6500DB74B2 /* Main.storyboard in Resources */,
@@ -224,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC436FE71F4939E200DB74B2 /* ViewController.swift in Sources */,
 				EC436FC51F491A6500DB74B2 /* AppDelegate.swift in Sources */,
 				EC436FCD1F491A6500DB74B2 /* InstaLike.xcdatamodeld in Sources */,
 			);
