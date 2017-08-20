@@ -16,6 +16,7 @@
 		EC436FE71F4939E200DB74B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC436FE61F4939E200DB74B2 /* ViewController.swift */; };
 		EC436FE91F493BB500DB74B2 /* ParseInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC436FE81F493BB500DB74B2 /* ParseInit.swift */; };
 		EC436FED1F494DB300DB74B2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC436FEC1F494DB300DB74B2 /* RegisterViewController.swift */; };
+		EC436FF11F495D7E00DB74B2 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC436FF01F495D7E00DB74B2 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		EC436FE61F4939E200DB74B2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC436FE81F493BB500DB74B2 /* ParseInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseInit.swift; sourceTree = "<group>"; };
 		EC436FEC1F494DB300DB74B2 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EC436FF01F495D7E00DB74B2 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		ED1B56A10F82B0F1BBF423EC /* Pods_InstaLike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaLike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 			children = (
 				EC436FE61F4939E200DB74B2 /* ViewController.swift */,
 				EC436FEC1F494DB300DB74B2 /* RegisterViewController.swift */,
+				EC436FF01F495D7E00DB74B2 /* FeedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				EC436FED1F494DB300DB74B2 /* RegisterViewController.swift in Sources */,
 				EC436FE91F493BB500DB74B2 /* ParseInit.swift in Sources */,
 				EC436FC51F491A6500DB74B2 /* AppDelegate.swift in Sources */,
+				EC436FF11F495D7E00DB74B2 /* FeedViewController.swift in Sources */,
 				EC436FCD1F491A6500DB74B2 /* InstaLike.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

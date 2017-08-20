@@ -213,16 +213,22 @@
             </objects>
             <point key="canvasLocation" x="820" y="35"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="cWl-AT-EMW">
             <objects>
-                <tabBarController id="wGd-Qs-pVx" sceneMemberID="viewController">
+                <tabBarController id="wGd-Qs-pVx" customClass="FeedViewController" customModule="InstaLike" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aSP-09-fNQ">
                         <barButtonItem key="leftBarButtonItem" systemItem="camera" id="CrG-EF-vGn">
                             <color key="tintColor" red="0.31642793860000001" green="0.59480024409999999" blue="0.90351364209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="onCamera:" destination="wGd-Qs-pVx" id="q8A-t9-42Z"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="rd2-I9-KTm">
                             <color key="tintColor" red="1" green="0.42241980769999998" blue="0.42026214099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="onLogout:" destination="wGd-Qs-pVx" id="LH1-C1-DRI"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="J5A-FL-bGZ">
