@@ -14,6 +14,7 @@
 		EC436FCF1F491A6500DB74B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC436FCE1F491A6500DB74B2 /* Assets.xcassets */; };
 		EC436FD21F491A6500DB74B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC436FD01F491A6500DB74B2 /* LaunchScreen.storyboard */; };
 		EC436FE71F4939E200DB74B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC436FE61F4939E200DB74B2 /* ViewController.swift */; };
+		EC436FE91F493BB500DB74B2 /* ParseInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC436FE81F493BB500DB74B2 /* ParseInit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		EC436FD11F491A6500DB74B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC436FD31F491A6500DB74B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC436FE61F4939E200DB74B2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC436FE81F493BB500DB74B2 /* ParseInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseInit.swift; sourceTree = "<group>"; };
 		ED1B56A10F82B0F1BBF423EC /* Pods_InstaLike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaLike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 		EC436FE51F4939C600DB74B2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EC436FE81F493BB500DB74B2 /* ParseInit.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC436FE71F4939E200DB74B2 /* ViewController.swift in Sources */,
+				EC436FE91F493BB500DB74B2 /* ParseInit.swift in Sources */,
 				EC436FC51F491A6500DB74B2 /* AppDelegate.swift in Sources */,
 				EC436FCD1F491A6500DB74B2 /* InstaLike.xcdatamodeld in Sources */,
 			);
