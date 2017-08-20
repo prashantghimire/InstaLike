@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-697" y="35"/>
         </scene>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InstaLike" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="BYZ-38-t0r" customClass="ViewController" customModule="InstaLike" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -37,7 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeN-VG-5MP">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IeN-VG-5MP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InstaLike" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qly-z0-Wfj">
@@ -47,16 +47,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="textColor" red="1" green="0.42241980769999998" blue="0.42026214099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsH-Ap-aUU">
-                                        <rect key="frame" x="137.5" y="390" width="100" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="lXN-LA-iXg"/>
-                                            <constraint firstAttribute="height" constant="40" id="wuQ-Sp-SZF"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.31642793860000001" green="0.59480024409999999" blue="0.90351364209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M92-O7-ffx">
@@ -95,19 +85,29 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE0-LC-IU9">
+                                        <rect key="frame" x="137.5" y="390" width="100" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="39I-Xj-a3g"/>
+                                            <constraint firstAttribute="width" constant="100" id="hJF-RX-aWh"/>
+                                        </constraints>
+                                        <state key="normal" title="Register"/>
+                                        <connections>
+                                            <segue destination="Fz4-cc-vGr" kind="show" id="dU1-56-MNx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="EOc-jh-t1w" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="16c-sJ-Qp0"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="BHA-cN-xpF"/>
-                                    <constraint firstItem="wsH-Ap-aUU" firstAttribute="top" secondItem="EOc-jh-t1w" secondAttribute="bottom" constant="30" id="D6u-Lg-N14"/>
+                                    <constraint firstItem="GE0-LC-IU9" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="FSY-1G-cgl"/>
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="width" secondItem="M92-O7-ffx" secondAttribute="width" id="IrC-eN-ebk"/>
                                     <constraint firstItem="EOc-jh-t1w" firstAttribute="top" secondItem="FJT-8S-DG0" secondAttribute="bottom" constant="30" id="L9E-eZ-6Id"/>
                                     <constraint firstItem="M92-O7-ffx" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="QL8-8I-fE6"/>
                                     <constraint firstItem="M92-O7-ffx" firstAttribute="top" secondItem="qly-z0-Wfj" secondAttribute="bottom" constant="100" id="RCB-k9-jOB"/>
-                                    <constraint firstItem="wsH-Ap-aUU" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="Ros-Ab-qED"/>
-                                    <constraint firstAttribute="bottom" secondItem="wsH-Ap-aUU" secondAttribute="bottom" constant="30" id="Va1-cS-HC5"/>
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="brW-St-FYB"/>
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="top" secondItem="M92-O7-ffx" secondAttribute="bottom" constant="50" id="gne-Yh-vaw"/>
+                                    <constraint firstItem="GE0-LC-IU9" firstAttribute="top" secondItem="EOc-jh-t1w" secondAttribute="bottom" constant="30" id="iE3-pJ-Bau"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="leading" secondItem="IeN-VG-5MP" secondAttribute="leading" constant="50" id="pbY-OQ-HfA"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="top" secondItem="IeN-VG-5MP" secondAttribute="top" constant="20" id="sAp-UI-ldP"/>
                                     <constraint firstAttribute="trailing" secondItem="qly-z0-Wfj" secondAttribute="trailing" constant="50" id="uXJ-Vc-CfR"/>
@@ -123,11 +123,29 @@
                             <constraint firstAttribute="trailing" secondItem="IeN-VG-5MP" secondAttribute="trailing" id="ytD-WM-vAQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7bd-re-c3d"/>
+                    <navigationItem key="navigationItem" title="Login" id="7bd-re-c3d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="nnN-F3-BOh">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" title="Register" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fz4-cc-vGr" customClass="RegisterViewController" customModule="InstaLike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dRp-ys-7jA"/>
+                        <viewControllerLayoutGuide type="bottom" id="rDN-fB-fip"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wCu-Yf-bhE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTc-gG-Eln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="354"/>
         </scene>
     </scenes>
 </document>
