@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sef-y8-HVv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7AW-u8-j7G">
+            <objects>
+                <navigationController id="sef-y8-HVv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4xm-Rr-MhP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ie7-lT-GNm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4IJ-fW-tzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-697" y="35"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -22,10 +38,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeN-VG-5MP">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InstaLike" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qly-z0-Wfj">
-                                        <rect key="frame" x="50" y="50" width="275" height="40"/>
+                                        <rect key="frame" x="50" y="20" width="275" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="M1C-py-9PP"/>
                                         </constraints>
@@ -34,7 +50,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsH-Ap-aUU">
-                                        <rect key="frame" x="137.5" y="420" width="100" height="40"/>
+                                        <rect key="frame" x="137.5" y="390" width="100" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="lXN-LA-iXg"/>
                                             <constraint firstAttribute="height" constant="40" id="wuQ-Sp-SZF"/>
@@ -44,7 +60,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M92-O7-ffx">
-                                        <rect key="frame" x="87.5" y="190" width="200" height="40"/>
+                                        <rect key="frame" x="87.5" y="160" width="200" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="aru-P0-6Po"/>
                                             <constraint firstAttribute="height" constant="40" id="nef-0T-v0k"/>
@@ -54,7 +70,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FJT-8S-DG0">
-                                        <rect key="frame" x="87.5" y="280" width="200" height="40"/>
+                                        <rect key="frame" x="87.5" y="250" width="200" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="Gad-HE-6aM"/>
                                             <constraint firstAttribute="height" constant="40" id="Szz-zq-a8T"/>
@@ -64,7 +80,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOc-jh-t1w">
-                                        <rect key="frame" x="137" y="350" width="100" height="40"/>
+                                        <rect key="frame" x="137" y="320" width="100" height="40"/>
                                         <color key="backgroundColor" red="0.93732154190000005" green="0.46792182049999997" blue="0.33497531330000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="Jw8-0t-p1r"/>
@@ -93,7 +109,7 @@
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="brW-St-FYB"/>
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="top" secondItem="M92-O7-ffx" secondAttribute="bottom" constant="50" id="gne-Yh-vaw"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="leading" secondItem="IeN-VG-5MP" secondAttribute="leading" constant="50" id="pbY-OQ-HfA"/>
-                                    <constraint firstItem="qly-z0-Wfj" firstAttribute="top" secondItem="IeN-VG-5MP" secondAttribute="top" constant="50" id="sAp-UI-ldP"/>
+                                    <constraint firstItem="qly-z0-Wfj" firstAttribute="top" secondItem="IeN-VG-5MP" secondAttribute="top" constant="20" id="sAp-UI-ldP"/>
                                     <constraint firstAttribute="trailing" secondItem="qly-z0-Wfj" secondAttribute="trailing" constant="50" id="uXJ-Vc-CfR"/>
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="height" secondItem="M92-O7-ffx" secondAttribute="height" id="wqi-ID-7eg"/>
                                 </constraints>
@@ -107,6 +123,7 @@
                             <constraint firstAttribute="trailing" secondItem="IeN-VG-5MP" secondAttribute="trailing" id="ytD-WM-vAQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7bd-re-c3d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
