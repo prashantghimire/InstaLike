@@ -12,11 +12,13 @@ class FeedViewController: UITabBarController {
 
     @IBAction func onLogout(_ sender: UIBarButtonItem) {
         print("on logout click!")
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func onCamera(_ sender: UIBarButtonItem) {
         print("on camera")
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
