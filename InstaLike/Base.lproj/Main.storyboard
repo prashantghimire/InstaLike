@@ -82,6 +82,9 @@
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="fxT-Aa-9vr" kind="show" id="7eE-4O-VVU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE0-LC-IU9">
                                         <rect key="frame" x="137.5" y="340" width="100" height="40"/>
@@ -133,23 +136,7 @@
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Vmp-bE-R6T">
-            <objects>
-                <navigationController id="Bsv-vb-fDA" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PBS-Of-8Mj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Fjm-ll-Ar5" kind="relationship" relationship="rootViewController" id="8bx-YN-53p"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FMs-V0-Z6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="839" y="35"/>
-        </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="jjF-vL-XbK">
             <objects>
                 <viewController id="Fjm-ll-Ar5" sceneMemberID="viewController">
@@ -162,11 +149,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUi-3U-ReJ">
-                                <rect key="frame" x="147" y="92" width="80" height="30"/>
+                                <rect key="frame" x="147" y="48" width="80" height="30"/>
                                 <state key="normal" title="Hello there!"/>
-                                <connections>
-                                    <segue destination="Jxj-qS-qkC" kind="show" id="rvY-Lq-DII"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,13 +159,18 @@
                             <constraint firstItem="UUi-3U-ReJ" firstAttribute="centerX" secondItem="8e2-Ge-ZkY" secondAttribute="centerX" id="9pt-Ba-6ZV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CQg-qB-Cnu"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="2A3-0e-YN6"/>
+                    <navigationItem key="navigationItem" id="CQg-qB-Cnu">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="XbC-Cg-kvN">
+                            <color key="tintColor" red="0.99861294030000003" green="0.18260334580000001" blue="0.1757740565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYV-ZK-dBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1562" y="35"/>
+            <point key="canvasLocation" x="2609" y="-293"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="Ufd-4f-fnl">
             <objects>
                 <viewController id="Jxj-qS-qkC" sceneMemberID="viewController">
@@ -194,10 +183,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="rAR-kM-SN4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rk1-23-DJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2365" y="29"/>
+            <point key="canvasLocation" x="2609" y="382"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BAO-02-pbb">
+            <objects>
+                <navigationController id="fxT-Aa-9vr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7eY-04-sFx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wGd-Qs-pVx" kind="relationship" relationship="rootViewController" id="eYA-Ik-h7c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kaf-7f-aLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="35"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cWl-AT-EMW">
+            <objects>
+                <tabBarController id="wGd-Qs-pVx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aSP-09-fNQ"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="J5A-FL-bGZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Fjm-ll-Ar5" kind="relationship" relationship="viewControllers" id="K38-w0-Oas"/>
+                        <segue destination="Jxj-qS-qkC" kind="relationship" relationship="viewControllers" id="ivz-zh-qBK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N3g-5r-xwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="35"/>
         </scene>
         <!--Register-->
         <scene sceneID="nnN-F3-BOh">
@@ -259,9 +284,6 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Bsv-vb-fDA" kind="show" id="ojf-KU-hOf"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
