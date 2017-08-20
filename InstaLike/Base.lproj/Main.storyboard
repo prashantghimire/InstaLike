@@ -159,7 +159,7 @@
                             <constraint firstItem="UUi-3U-ReJ" firstAttribute="centerX" secondItem="8e2-Ge-ZkY" secondAttribute="centerX" id="9pt-Ba-6ZV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" id="2A3-0e-YN6"/>
+                    <tabBarItem key="tabBarItem" title="" systemItem="favorites" id="2A3-0e-YN6"/>
                     <navigationItem key="navigationItem" title="Feed" id="CQg-qB-Cnu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYV-ZK-dBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,7 +191,9 @@
                             <constraint firstItem="wij-Yf-hJy" firstAttribute="top" secondItem="VaI-bf-ahc" secondAttribute="bottom" constant="39" id="uiX-tf-iyN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="rAR-kM-SN4"/>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="smiley" systemItem="contacts" id="rAR-kM-SN4">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rk1-23-DJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -337,4 +339,7 @@
             <point key="canvasLocation" x="25" y="743"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="smiley" width="16" height="16"/>
+    </resources>
 </document>
