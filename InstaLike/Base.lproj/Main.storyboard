@@ -160,11 +160,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" id="2A3-0e-YN6"/>
-                    <navigationItem key="navigationItem" id="CQg-qB-Cnu">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="XbC-Cg-kvN">
-                            <color key="tintColor" red="0.99861294030000003" green="0.18260334580000001" blue="0.1757740565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Feed" id="CQg-qB-Cnu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYV-ZK-dBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,7 +169,7 @@
         <!--Profile-->
         <scene sceneID="Ufd-4f-fnl">
             <objects>
-                <viewController id="Jxj-qS-qkC" sceneMemberID="viewController">
+                <viewController title="Profile" id="Jxj-qS-qkC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VaI-bf-ahc"/>
                         <viewControllerLayoutGuide type="bottom" id="3tv-fa-ZOB"/>
@@ -221,7 +217,14 @@
         <scene sceneID="cWl-AT-EMW">
             <objects>
                 <tabBarController id="wGd-Qs-pVx" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="aSP-09-fNQ"/>
+                    <navigationItem key="navigationItem" id="aSP-09-fNQ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="CrG-EF-vGn">
+                            <color key="tintColor" red="0.31642793860000001" green="0.59480024409999999" blue="0.90351364209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="rd2-I9-KTm">
+                            <color key="tintColor" red="1" green="0.42241980769999998" blue="0.42026214099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="J5A-FL-bGZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
