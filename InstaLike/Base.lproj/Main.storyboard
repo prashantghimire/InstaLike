@@ -136,7 +136,7 @@
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
         </scene>
-        <!--Item-->
+        <!--Feed-->
         <scene sceneID="jjF-vL-XbK">
             <objects>
                 <viewController id="Fjm-ll-Ar5" sceneMemberID="viewController">
@@ -149,8 +149,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUi-3U-ReJ">
-                                <rect key="frame" x="147" y="48" width="80" height="30"/>
-                                <state key="normal" title="Hello there!"/>
+                                <rect key="frame" x="151" y="92" width="73" height="30"/>
+                                <state key="normal" title="Feed Page"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -159,7 +159,7 @@
                             <constraint firstItem="UUi-3U-ReJ" firstAttribute="centerX" secondItem="8e2-Ge-ZkY" secondAttribute="centerX" id="9pt-Ba-6ZV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2A3-0e-YN6"/>
+                    <tabBarItem key="tabBarItem" title="Feed" id="2A3-0e-YN6"/>
                     <navigationItem key="navigationItem" id="CQg-qB-Cnu">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="XbC-Cg-kvN">
                             <color key="tintColor" red="0.99861294030000003" green="0.18260334580000001" blue="0.1757740565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -170,7 +170,7 @@
             </objects>
             <point key="canvasLocation" x="2609" y="-293"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="Ufd-4f-fnl">
             <objects>
                 <viewController id="Jxj-qS-qkC" sceneMemberID="viewController">
@@ -181,9 +181,21 @@
                     <view key="view" contentMode="scaleToFill" id="q9n-KQ-olv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wij-Yf-hJy">
+                                <rect key="frame" x="141.5" y="103" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wij-Yf-hJy" firstAttribute="centerX" secondItem="q9n-KQ-olv" secondAttribute="centerX" id="B5h-5w-YQg"/>
+                            <constraint firstItem="wij-Yf-hJy" firstAttribute="top" secondItem="VaI-bf-ahc" secondAttribute="bottom" constant="39" id="uiX-tf-iyN"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="rAR-kM-SN4"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="rAR-kM-SN4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rk1-23-DJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
