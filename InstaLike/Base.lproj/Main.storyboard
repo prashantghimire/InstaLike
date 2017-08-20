@@ -34,7 +34,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsH-Ap-aUU">
-                                        <rect key="frame" x="137.5" y="597" width="100" height="40"/>
+                                        <rect key="frame" x="137.5" y="420" width="100" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="lXN-LA-iXg"/>
                                             <constraint firstAttribute="height" constant="40" id="wuQ-Sp-SZF"/>
@@ -83,9 +83,9 @@
                                 <constraints>
                                     <constraint firstItem="EOc-jh-t1w" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="16c-sJ-Qp0"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="BHA-cN-xpF"/>
+                                    <constraint firstItem="wsH-Ap-aUU" firstAttribute="top" secondItem="EOc-jh-t1w" secondAttribute="bottom" constant="30" id="D6u-Lg-N14"/>
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="width" secondItem="M92-O7-ffx" secondAttribute="width" id="IrC-eN-ebk"/>
                                     <constraint firstItem="EOc-jh-t1w" firstAttribute="top" secondItem="FJT-8S-DG0" secondAttribute="bottom" constant="30" id="L9E-eZ-6Id"/>
-                                    <constraint firstItem="wsH-Ap-aUU" firstAttribute="top" secondItem="qly-z0-Wfj" secondAttribute="bottom" constant="507" id="MWa-Pj-faK"/>
                                     <constraint firstItem="M92-O7-ffx" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="QL8-8I-fE6"/>
                                     <constraint firstItem="M92-O7-ffx" firstAttribute="top" secondItem="qly-z0-Wfj" secondAttribute="bottom" constant="100" id="RCB-k9-jOB"/>
                                     <constraint firstItem="wsH-Ap-aUU" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="Ros-Ab-qED"/>
