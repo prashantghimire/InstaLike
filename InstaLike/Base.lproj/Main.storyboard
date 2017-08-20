@@ -37,7 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IeN-VG-5MP">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeN-VG-5MP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InstaLike" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qly-z0-Wfj">
@@ -99,6 +99,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="EOc-jh-t1w" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="16c-sJ-Qp0"/>
+                                    <constraint firstAttribute="bottom" secondItem="GE0-LC-IU9" secondAttribute="bottom" constant="30" id="4r2-d2-QuN"/>
                                     <constraint firstItem="qly-z0-Wfj" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="BHA-cN-xpF"/>
                                     <constraint firstItem="GE0-LC-IU9" firstAttribute="centerX" secondItem="IeN-VG-5MP" secondAttribute="centerX" id="FSY-1G-cgl"/>
                                     <constraint firstItem="FJT-8S-DG0" firstAttribute="width" secondItem="M92-O7-ffx" secondAttribute="width" id="IrC-eN-ebk"/>
